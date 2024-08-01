@@ -4,7 +4,7 @@
 
 ### 🟢 [1. 两数之和](https://leetcode.cn/problems/two-sum/description/)
 
-题目要求：在数组中找出和为 `target` 的两个元素，并**返回相应的下标**。
+题目要求：在数组中找出和为 `target` 的两个元素，并返回它们的索引。
 
 #### 1. 暴力法
 
@@ -26,7 +26,7 @@ var twoSum = function(nums, target) {
 
 #### 👍 2. 哈希表
 
-我们可以使用哈希表来存储数组中的元素及其下标。遍历数组元素，判断 `target - nums[i]` 是否在哈希表中。如果存在，则返回当前元素的下标和哈希表中对应元素的下标。
+我们可以使用哈希表来存储数组中的元素及其索引。遍历数组元素，判断 `target - nums[i]` 是否在哈希表中。如果存在，则返回当前元素的索引和哈希表中对应元素的索引。
 
 ``` js
 var twoSum = function(nums, target) {
@@ -42,15 +42,13 @@ var twoSum = function(nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-
-
 ### 🟢 [剑指 Offer 57. 和为s的两个数字](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/description/)
 
 题目要求：在一个**升序排列**的数组中找出和为 `target` 两个元素。
 
 #### 1. 暴力法（超时）
 
-仅用于参考。
+思路与上一题相同，只不过这里要求返回的是数组元素。仅用于参考。
 
 ``` js
 var twoSum = function (nums, target) {
@@ -103,17 +101,15 @@ var twoSum = function (nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-
-
 ### 🟢 ❤ [167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/)
 
-题目要求：在一个**下标从 1 开始**的**升序排列**数组中，找出和为 `target` 的两个元素，并**返回相应的下标**。
+题目要求：在一个**索引从 1 开始**的**升序排列**数组中，找出和为 `target` 的两个元素，并返回它们的索引。
 
 设计的解决方案必须只使用常数级额外空间。
 
 #### 1. 暴力法（超时）
 
-仅用于参考。
+思路与前两题相同，只不过这里要求返回的是从 1 开始的索引，仅用于参考。
 
 ``` js
 var twoSum = function(nums, target) {
@@ -163,7 +159,7 @@ const binarySearch =(nums, target, lo, hi) => {
 
 #### 👍 3. 双指针
 
-为了进一步优化查找时间，可以使用双指针来解决此题。思路与上一题相同，这里就不在赘述。
+为了进一步优化查找时间，根据数组的有序性，我们可以使用双指针来解决此题。思路与上一题相同，这里就不在赘述。
 
 ``` js
 var twoSum = function(nums, target) {
@@ -180,8 +176,6 @@ var twoSum = function(nums, target) {
 ```
 
 时间复杂度：O(n)，空间复杂度：O(1)。
-
-
 
 ### 🟡 [面试题 16.24 数对和](https://leetcode.cn/problems/pairs-with-sum-lcci/description/)
 
@@ -237,11 +231,9 @@ var pairSums = function (nums, target) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-
-
 ## 三数之和
 
-### 🟡 [15. 三数之和](https://leetcode.cn/problems/3sum/description/)
+### 🟡 ❤ [15. 三数之和](https://leetcode.cn/problems/3sum/description/)
 
 题目要求：在数组中找出所有和为 `0` 的三元组，且不能包含重复三元组。
 
@@ -288,15 +280,13 @@ var threeSum = function (nums) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-
-
 ### 🟡 [16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/description/)
 
-题目要求：在数组中找出三元组中最接近 `target` 的和，并将其返回。
+题目要求：在数组中找出与 `target` 最接近的三元组和。
 
 #### 1. 暴力法
 
-三重循环，尝试所有可能的三数组合，并记录与 `target` 的差值，并返回差值最小的那个。
+三重循环，尝试所有可能的三数组合，记录与 `target` 的差值，并返回差值最小的那个。
 
 ``` js
 var threeSumClosest = function(nums, target) {
@@ -361,11 +351,9 @@ var threeSumClosest = function(nums, target) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-
-
 ## 四数之和
 
-### 🟡 18. 四数之和
+### 🟡 [18. 四数之和](https://leetcode.cn/problems/4sum/description/)
 
 题目要求：在数组中找出所有和为 `target` 的四元组，且不能包含重复四元组。
 
@@ -459,15 +447,13 @@ const kSum = (nums, target, k, start, cur, res) => {
 };
 ```
 
-
-
-### 🟡 454. 四数相加 II
+### 🟡 [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)
 
 题目要求：在四个数组中找出有多少个四元组的和为 `0`。
 
 #### 1. 暴力法（超时）
 
-枚举四个数组中的每个元素，计算和为 `0` 的四元组数量。
+枚举四个数组中的每个元素，计算和为 `0` 的四元组数量。仅用于参考。
 
 ``` js
 var fourSumCount = function(nums1, nums2, nums3, nums4) {
