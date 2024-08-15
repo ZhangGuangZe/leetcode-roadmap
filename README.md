@@ -8,7 +8,9 @@
 
 - [duplicate number problems](/array/duplicate-number-problems.md)
 
-- interval problems
+- [intervals problems](/array/intervals-problems.md)
+
+- rotate array problems
 
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
