@@ -1,6 +1,6 @@
 # 重复元素问题
 
-## 🟢 [217. 存在重复元素](https://leetcode.cn/problems/contains-duplicate/description/)
+## [217. 存在重复元素 🟢](https://leetcode.cn/problems/contains-duplicate/description/)
 
 题目要求：判断在给定数组中是否存在重复元素。
 
@@ -24,7 +24,7 @@ var containsDuplicate = function(nums) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 👍 2. 排序
+### 2. 排序 👍
 
 先对数组进行排序，然后检查相邻的元素是否相同。
 
@@ -42,7 +42,7 @@ var containsDuplicate = function(nums) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-### 👍 3. 哈希表
+### 3. 哈希表 👍
 
 遍历数组元素，判断当前元素是否存在于哈希表中，如果不存在，将其添加到哈希表中，否则有重复元素。
 
@@ -61,7 +61,7 @@ var containsDuplicate = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-## 🟢 [219. 存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/description/)
+## [219. 存在重复元素 II 🟢](https://leetcode.cn/problems/contains-duplicate-ii/description/)
 
 题目要求：判断在给定数组中是否存在重复元素并且重复元素的索引差小于等于 `k`。
 
@@ -85,7 +85,7 @@ var containsNearbyDuplicate = function(nums, k) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 👍 2. 哈希表
+### 2. 哈希表 👍
 
 使用哈希表来存储每个元素的索引，如果发现重复元素则判断它们的索引差是否小于等于 `k`。
 
@@ -106,7 +106,7 @@ var containsNearbyDuplicate = function(nums, k) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 👍 3. 哈希表 + 滑动窗口
+### 3. 哈希表 + 滑动窗口 👍
 
 维护一个大小为 `k` 的滑动窗口而无需将所有元素存入哈希表中。在遍历数组时，将元素添加到集合中，如果集合中的元素超过 `k` 个，就删除最左边的元素，直到找出重复元素为止。
 
@@ -128,7 +128,7 @@ var containsNearbyDuplicate = function(nums, k) {
 
 时间复杂度：O(n)，空间复杂度：O(k)。
 
-## 🟢 ❤ [剑指 Offer 03 数组中重复的数字](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/description/)
+## [剑指 Offer 03 数组中重复的数字 🟢 ❤](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/description/)
 
 题目要求：在一个包含 `n` 个数且元素在 `[0, n - 1]` 范围内的数组中，找出任意一个重复的数字。
 
@@ -150,7 +150,7 @@ var findRepeatNumber = function (nums) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 👍 2. 排序
+### 2. 排序 👍
 
 先将数组进行排序，然后检查相邻的元素是否相同。
 
@@ -166,7 +166,7 @@ var findRepeatNumber = function (nums) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-### 👍 3. 哈希表
+### 3. 哈希表 👍
 
 遍历数组元素，判断当前元素是否在哈希表中，如果存在则该元素即为重复数字，返回该数字即可；如果哈希表中不存在该元素，则将其加入哈希表。继续遍历，直到找到重复数字为止。
 
@@ -183,7 +183,7 @@ var findRepeatNumber = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 👍 4. 原地哈希
+### 4. 原地哈希 👍
 
 由于数组元素在 `[0, n - 1]` 范围内，可以先将当前元素与当前元素作为索引对应的元素进行交换，然后遍历数组，判断当前元素与索引是否相同，如果不同，则说明该元素是重复数字。
 
@@ -204,7 +204,7 @@ var findRepeatNumber = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🟡 ❤ [442. 数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array/description/)
+## [442. 数组中重复的数据 🟡 ❤](https://leetcode.cn/problems/find-all-duplicates-in-an-array/description/)
 
 题目要求：在一个包含 `n` 个数且元素在 `[1, n]` 范围内元素只出现一次或两次的数组中，找出所有重复两次的数字。
 
@@ -212,7 +212,7 @@ var findRepeatNumber = function (nums) {
 
 如果没有限制条件，可以使用暴力法、排序和哈希表来解题，前面的题目已经展示了这些方法的题解，以下仅展示符合限制条件的题解。
 
-### 👍 1. 原地哈希
+### 1. 原地哈希 👍
 
 将每个数交换到以该数作为索引对应的位置上，然后遍历数组，将不在正确位置的数字记录为重复的数字。
 
@@ -237,7 +237,7 @@ var findDuplicates = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 👍 2. 标记法
+### 2. 标记法 👍
 
 以当前元素作为索引，将索引对应的元素标记为负数，再次遇到当前元素作为索引对应的元素为负数时，则说明该元素是重复的，将其记录为重复元素。
 
@@ -259,7 +259,7 @@ var findDuplicates = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🟡 ❤ [287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/description/)
+## [287. 寻找重复数 🟡 ❤](https://leetcode.cn/problems/find-the-duplicate-number/description/)
 
 题目要求：在一个包含 `n + 1` 个数且元素在 `[1, n]` 范围内的数组中，找出唯一重复的数。
 
@@ -267,7 +267,7 @@ var findDuplicates = function (nums) {
 
 如果没有限制条件，并且空间允许，可以使用哈希表解题；如果可以修改原数组，可以使用排序、原地哈希和标记法解题。以下仅展示符合限制条件的题解，其它题解请参考上面的题解。
 
-### 👍 二分查找
+### 1. 二分查找 👍
 
 既然使用暴力法会超时，我们可以使用二分查找来优化查询效率。
 
@@ -296,7 +296,7 @@ var findDuplicate = function (nums) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-### 👍 快慢指针（Floyd 判圈算法）
+### 2. 快慢指针（Floyd 判圈算法）👍
 
 将数组看做是环形链表，重复的数字就是环的入口。使用快慢指针，慢指针每次走一步，快指针每次走两步，如果慢指针和快指针相遇，说明有环；然后将慢指针重新置为起点，两指针每次同时走一步，再次相遇则为重复的数字。
 
@@ -323,11 +323,11 @@ var findDuplicate = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🟢 [剑指 Offer 61 扑克牌中的顺子](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/description/)
+## [剑指 Offer 61 扑克牌中的顺子 🟢](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/description/)
 
 题目要求：从若干扑克牌中随机抽 `5` 张牌，判断是不是顺子，即这 `5` 张牌是否连续。
 
-### 👍 1. 哈希表
+### 1. 哈希表 👍
 
 利用哈希表记录出现的数字。如果遇到大小王，则跳过。如果出现重复元，则不可能构成顺子。记录最小值和最大值，如果最大值和最小值之间的差值小于 `5`，则说明可以构成顺子。
 
@@ -353,7 +353,7 @@ var isStraight = function (nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 👍 2. 排序
+### 2. 排序 👍
 
 先对数组进行排序，然后检查是否可以通过大小王来补齐连续的数字，并检查是否有重复的扑克牌，最后检查最大值和最小值之间的差值是否小于 `5`。
 

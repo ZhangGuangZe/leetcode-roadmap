@@ -1,6 +1,6 @@
 # 缺失元素问题
 
-## 🟢 ❤ [268. 丢失的数字](https://leetcode.cn/problems/missing-number/description/)
+## [268. 丢失的数字 🟢 ❤](https://leetcode.cn/problems/missing-number/description/)
 
 题目要求：在一个包含 `n` 个数且元素在 `[0, n]` 区间的数组中，找出缺失的那个数字。
 
@@ -59,7 +59,7 @@ var missingNumber = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 👍 4. 位运算
+### 4. 位运算 👍
 
 利用位运算中异或运算的特性：相同的数字异或为 0，任何数与 0 异或为其自身。遍历数组元素，消除相同的数字，最后剩下的数字即为丢失的数字。
 
@@ -78,7 +78,7 @@ var missingNumber = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 👍 5. 数学
+### 5. 数学 👍
 
 利用高斯求和公式计算 `[0, n]` 区间所有数字的总和，然后减去数组中所有数字的总和得到的即为丢失的数字。
 
@@ -91,7 +91,7 @@ var missingNumber = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🟢 448. [找到所有数组中消失的数字](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/description/)
+## 448. [找到所有数组中消失的数字 🟢](https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/description/)
 
 题目要求：在一个包含 `n` 个数且元素在 `[1, n]` 区间的数组中，找出缺失的所有数字。
 
@@ -142,7 +142,7 @@ var findDisappearedNumbers = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 👍 3. 原地哈希
+### 3. 原地哈希 👍
 
 “一个萝卜一个坑”，以索引作为哈希表的键，元素作为哈希表的值。先将元素与索引不对应的元素原地交换到对应位置，然后遍历数组，将与数组元素不对应的数字记录为消失的数字。
 
@@ -167,7 +167,7 @@ var findDisappearedNumbers = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 👍 4. 标记法
+### 4. 标记法 👍
 
 通过标记数组元素的方式，将出现过的数字对应索引的元素标记为负数，然后遍历数组，将未标记（大于 `0`）的元素记录为消失的数字。
 
@@ -211,7 +211,7 @@ var findDisappearedNumbers = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🔴 [41. 缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive/)
+## [41. 缺失的第一个正数 🔴](https://leetcode.cn/problems/first-missing-positive/)
 
 题目要求：在一个未排序的整数数组中，找出缺失的第一个正整数。
 
@@ -265,7 +265,7 @@ var firstMissingPositive = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 👍 3. 原地哈希
+### 3. 原地哈希 👍
 
 先将 `[1, n]` 区间内的所有元素原地交换到索引对应位置，然后遍历数组，找出第一个不在对应位置的元素即为缺失的正数。
 
@@ -289,7 +289,7 @@ var firstMissingPositive = function(nums) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 👍 4. 标记法
+### 4. 标记法 👍
 
 由于数组中存在 `0` 和非负整数，需要将它们标记为 `n + 1` 的正整数。然后将 `[1, n]` 区间内的所有元素标记负数，最后遍历数组，找出第一个未标记的位置即为第一个缺失的正数。
 

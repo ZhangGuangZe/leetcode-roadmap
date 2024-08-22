@@ -2,7 +2,7 @@
 
 ## 两数之和
 
-### 🟢 [1. 两数之和](https://leetcode.cn/problems/two-sum/description/)
+### [1. 两数之和 🟢](https://leetcode.cn/problems/two-sum/description/)
 
 题目要求：在数组中找出和为 `target` 的两个元素，并返回它们的索引。
 
@@ -24,7 +24,7 @@ var twoSum = function(nums, target) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-#### 👍 2. 哈希表
+#### 2. 哈希表 👍
 
 我们可以使用哈希表来存储数组中的元素及其索引。遍历数组元素，判断 `target - nums[i]` 是否在哈希表中。如果存在，则返回当前元素的索引和哈希表中对应元素的索引。
 
@@ -42,7 +42,7 @@ var twoSum = function(nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-### 🟢 [剑指 Offer 57. 和为s的两个数字](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/description/)
+### [剑指 Offer 57. 和为s的两个数字 🟢](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/description/)
 
 题目要求：在一个**升序排列**的数组中找出和为 `target` 两个元素。
 
@@ -82,7 +82,7 @@ var twoSum = function (nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-#### 👍 3. 双指针
+#### 3. 双指针 👍
 
 由于数组是升序排列的，我们可以使用双指针来解决此题。首先分别定义 `l` 和 `r` 两个指针，初始化时分别指向数组的第一个和最后一个元素，然后每次计算两指针对应元素和，并根据其与 `target` 的关系移动指针，直到找到和为 `target` 的两个元素为止。
 
@@ -101,7 +101,7 @@ var twoSum = function (nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 🟢 ❤ [167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/)
+### [167. 两数之和 II - 输入有序数组 🟢 ❤](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/description/)
 
 题目要求：在一个**索引从 1 开始**的**升序排列**数组中，找出和为 `target` 的两个元素，并返回它们的索引。
 
@@ -157,7 +157,7 @@ const binarySearch =(nums, target, lo, hi) => {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-#### 👍 3. 双指针
+#### 3. 双指针 👍
 
 为了进一步优化查找时间，根据数组的有序性，我们可以使用双指针来解决此题。思路与上一题相同，这里就不在赘述。
 
@@ -177,11 +177,11 @@ var twoSum = function(nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-### 🟡 [面试题 16.24 数对和](https://leetcode.cn/problems/pairs-with-sum-lcci/description/)
+### [面试题 16.24 数对和 🟡](https://leetcode.cn/problems/pairs-with-sum-lcci/description/)
 
 题目要求：在数组中找出所有和为 `target` 的数对（一个元素只能组成一个数对）。
 
-#### 👍 1. 哈希表计数
+#### 1. 哈希表计数 👍
 
 利用哈希表记录数组元素及其出现的次数。遍历数组，如果 `target` 与当前元素的差值存在于哈希表中并且出现次数大于 `0`，则将当前元素与差值组成数对，并将其在哈希表中出现的次数减 `1`。否则将当前元素在哈希表中出现的次数加 `1`。
 
@@ -207,7 +207,7 @@ var pairSums = function (nums, target) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-#### 👍 2. 排序 + 双指针
+#### 2. 排序 + 双指针 👍
 
 首先对数组进行排序，然后通过双指针方法寻找数对。双指针的思路与前几题的思路类似，都是计算指针对应元素的和，并根据其与 `target` 的关系移动指针。只不过当找到数对时，需要移动指针，避免让一个元素出现多次。
 
@@ -233,11 +233,11 @@ var pairSums = function (nums, target) {
 
 ## 三数之和
 
-### 🟡 ❤ [15. 三数之和](https://leetcode.cn/problems/3sum/description/)
+### [15. 三数之和 🟡 ❤](https://leetcode.cn/problems/3sum/description/)
 
 题目要求：在数组中找出所有和为 `0` 的三元组，且不能包含重复三元组。
 
-#### 1. 排序 + 双指针
+#### 排序 + 双指针
 
 先对数组进行排序，以方便跳过重复元素。然后固定一个元素，使用双指针在剩余的元素中寻找另外两个元素，使得三元组的和为 `0`。
 
@@ -280,7 +280,7 @@ var threeSum = function (nums) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 🟡 [16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/description/)
+### [16. 最接近的三数之和 🟡](https://leetcode.cn/problems/3sum-closest/description/)
 
 题目要求：在数组中找出与 `target` 最接近的三元组和。
 
@@ -310,7 +310,7 @@ var threeSumClosest = function(nums, target) {
 
 时间复杂度：O(n³)，空间复杂度：O(1)。
 
-#### 👍 2. 排序 + 双指针
+#### 2. 排序 + 双指针 👍
 
 先对数组进行排序，以方便跳过重复元素。然后固定一个元素，使用双指针在剩余元素中寻找另外两个元素，找出最接近 `target` 的和。
 
@@ -353,7 +353,7 @@ var threeSumClosest = function(nums, target) {
 
 ## 四数之和
 
-### 🟡 [18. 四数之和](https://leetcode.cn/problems/4sum/description/)
+### [18. 四数之和 🟡](https://leetcode.cn/problems/4sum/description/)
 
 题目要求：在数组中找出所有和为 `target` 的四元组，且不能包含重复四元组。
 
@@ -447,7 +447,7 @@ const kSum = (nums, target, k, start, cur, res) => {
 };
 ```
 
-### 🟡 [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)
+### [454. 四数相加 II 🟡](https://leetcode.cn/problems/4sum-ii/)
 
 题目要求：在四个数组中找出有多少个四元组的和为 `0`。
 
@@ -475,7 +475,7 @@ var fourSumCount = function(nums1, nums2, nums3, nums4) {
 
 时间复杂度：O(n⁴)，空间复杂度：O(1)。
 
-#### 👍 2. 分组哈希
+#### 2. 分组哈希 👍
 
 我们使用哈希表来存储 `num1` 和 `num2` 的和并记录每个和出现的次数，然后遍历计算`num3` 和 `num4` 的和，如果存在对应的和，则将次数加到结果中。
 

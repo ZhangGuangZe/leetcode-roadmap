@@ -1,6 +1,6 @@
 # 区间问题
 
-## 🔒 🟢 [252. 会议室](https://leetcode.cn/problems/meeting-rooms/description/)
+## [252. 会议室 🟢 🔒](https://leetcode.cn/problems/meeting-rooms/description/)
 
 题目要求：给定一组会议时间区间，判断这些区间是否重叠。如果没有重叠，则可以参加所有会议。
 
@@ -24,7 +24,7 @@ var canAttendMeetings = function (intervals) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 👍 2. 排序
+### 2. 排序 👍
 
 首先根据区间的开始时间区间列表排序，然后遍历排序好的区间，检查当前区间与前一个区间是否重叠。如果当前区间的开始时间小于前一个会议的结束时间，则说明区间重叠。
 
@@ -42,7 +42,7 @@ var canAttendMeetings = function (intervals) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(logn)。
 
-## 🔒 🟡 ❤ [253. 会议室 II](https://leetcode.cn/problems/meeting-rooms-ii/description/)
+## [253. 会议室 II 🟡 ❤ 🔒](https://leetcode.cn/problems/meeting-rooms-ii/description/)
 
 题目要求：给定一组会议时间区间，计算在同一时间有多少个会议室被使用。即包含多少个重叠的区间。
 
@@ -71,7 +71,7 @@ var minMeetingRooms = function (intervals) {
 
 时间复杂度：O(n²)，空间复杂度：O(1)。
 
-### 👍 2. 贪心算法
+### 2. 贪心算法 👍
 
 分别使用两个数组存储每个会议的开始时间和结束时间，然后对这两个数组进行排序。通过遍历开始时间数组，检查每个会议的开始时间是否小于当前会议的最早结束时间，如果小于，则说明有重叠，需要增加会议室数量。
 
@@ -102,7 +102,7 @@ var minMeetingRooms = function (intervals) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(n)。
 
-### 👍 3. 差分数组
+### 3. 差分数组 👍
 
 差分数组是一种通过存储相邻元素的变化量来高效处理频繁的区间更新操作的数据结构。
 
@@ -131,7 +131,7 @@ var minMeetingRooms = function (intervals) {
 
 时间复杂度：O(n)，空间复杂度：O(n)。
 
-## 🟡 [56. 合并区间](https://leetcode.cn/problems/merge-intervals/description/)
+## [56. 合并区间 🟡](https://leetcode.cn/problems/merge-intervals/description/)
 
 题目要求：在若干个区间集合中，合并所有重叠的区间并返回合并后的新区间。
 
@@ -163,7 +163,7 @@ var merge = function(intervals) {
 
 时间复杂度：O(nlogn)，空间复杂度：O(1)。
 
-## 🟡 [57. 插入区间](https://leetcode.cn/problems/insert-interval/description/)
+## [57. 插入区间 🟡](https://leetcode.cn/problems/insert-interval/description/)
 
 题目要求：将一个新的区间插入到一个无重叠且有序的区间列表中，并保持区间的无重叠和有序性。
 
@@ -203,7 +203,7 @@ var insert = function(intervals, newInterval) {
 
 时间复杂度：O(n)，空间复杂度：O(1)。
 
-## 🟡 ❤ [986. 区间列表的交集](https://leetcode.cn/problems/interval-list-intersections/description/)
+## [986. 区间列表的交集 🟡 ❤](https://leetcode.cn/problems/interval-list-intersections/description/)
 
 题目要求：在**有序的**两个区间列表中，找出并返回它们所有相交（重叠）的区间。
 
@@ -232,7 +232,7 @@ var intervalIntersection = function(firstList, secondList) {
 
 时间复杂度：O(m * n)，空间复杂度：O(1)。
 
-### 👍 2. 双指针
+### 2. 双指针 👍
 
 由于区间列表是有序的，我们可以使用双指针的方法来遍历两个区间列表，避免一些不必要的计算。
 
@@ -261,7 +261,7 @@ var intervalIntersection = function(firstList, secondList) {
 
 时间复杂度：O(m + n)，空间复杂度：O(1)。
 
-## 🟢 [228. 汇总区间](https://leetcode.cn/problems/summary-ranges/description/)
+## [228. 汇总区间 🟢](https://leetcode.cn/problems/summary-ranges/description/)
 
 题目要求：将一个无重复元素且**有序的**的数组汇总成连续数字的区间表示。
 
