@@ -10,7 +10,7 @@
 
 - [intervals problems](/array/intervals-problems.md)
 
-- rotate array problems
+- [rotate array problems](/array/rotate-array-problems.md)
 
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
