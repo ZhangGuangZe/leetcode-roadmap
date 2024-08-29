@@ -41,7 +41,7 @@ var missingNumber = function(nums) {
 };
 ```
 
-时间复杂度：O(nlogn)，空间复杂度：O(1)。
+时间复杂度：O(nlogn)，空间复杂度：O(n)。
 
 ### 3. 哈希表
 

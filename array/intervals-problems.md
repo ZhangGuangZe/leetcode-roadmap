@@ -40,7 +40,7 @@ var canAttendMeetings = function (intervals) {
 };
 ```
 
-时间复杂度：O(nlogn)，空间复杂度：O(logn)。
+时间复杂度：O(nlogn)，空间复杂度：O(n)。
 
 ## [253. 会议室 II 🟡 ❤ 🔒](https://leetcode.cn/problems/meeting-rooms-ii/description/)
 
@@ -161,7 +161,7 @@ var merge = function(intervals) {
 };
 ```
 
-时间复杂度：O(nlogn)，空间复杂度：O(1)。
+时间复杂度：O(nlogn)，空间复杂度：O(n)。
 
 ## [57. 插入区间 🟡](https://leetcode.cn/problems/insert-interval/description/)
 
