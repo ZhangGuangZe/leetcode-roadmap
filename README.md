@@ -16,12 +16,14 @@
 
 - [remove element problems](/two-pointers/remove-element-problems.md)
 
-- merge array problems
+- [merge array problems](/two-pointers/merge-array-problems.md)
 
 - trapping water problems
 
 - generate permutations problems
 
 - other problems
+
+
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
