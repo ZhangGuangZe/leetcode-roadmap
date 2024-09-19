@@ -18,11 +18,11 @@
 
 - [merge array problems](/two-pointers/merge-array-problems.md)
 
-- trapping water problems
+- [trapping water problems](/two-pointers/trapping-water-problems.md)
 
-- generate permutations problems
+- [generate permutations problems](/two-pointers/generate-permutations-problems.md)
 
-- other problems
+- [other problems](/two-pointers/other-problems.md)
 
 
 
