@@ -140,7 +140,7 @@ var minMeetingRooms = function (intervals) {
 首先根据每个区间的开始区间进行排序，然后遍历区间集合，如果当前区间的开始区间小于等于上一个区间的结束区间，说明重叠需要合并区间；否则将当前区间加入到结果集中。
 
 ``` js
-var merge = function(intervals) {
+var merge = function (intervals) {
   intervals.sort((a, b) => a[0] - b[0]);
 
   const n = intervals.length;
@@ -174,7 +174,7 @@ var merge = function(intervals) {
 遍历区间列表，找到插入区间的位置，将新区间插入到合适位置并处理重叠区间。
 
 ``` js
-var insert = function(intervals, newInterval) {
+var insert = function (intervals, newInterval) {
   if (!intervals.length) return [newInterval];
 
   const res = [];
@@ -212,7 +212,7 @@ var insert = function(intervals, newInterval) {
 两层循环遍历两个区间列表的所有区间。通过比较两个区间的最大开始区间和最小结束区间，如果开始区间小于等于结束区间，则表示有交集，将交集区间添加到结果中。
 
 ``` js
-var intervalIntersection = function(firstList, secondList) {
+var intervalIntersection = function (firstList, secondList) {
   const res = [];
 
   for (const first of firstList) {
@@ -239,7 +239,7 @@ var intervalIntersection = function(firstList, secondList) {
 维护两个指针，分别遍历两个区间列表，逐一比较并找出重叠的部分。通过比较两个区间的最大开始区间和最小结束区间，如果开始区间小于等于结束区间，则表示有交集，将交集区间添加到结果中。如果 `firstList` 当前区间的结束区间小于 `secondList` 当前区间的结束区间，则移动 `i` 指针，否则移动 `j` 指针。
 
 ``` js
-var intervalIntersection = function(firstList, secondList) {
+var intervalIntersection = function (firstList, secondList) {
   const res = [];
   let i = 0;
   let j = 0;
@@ -270,7 +270,7 @@ var intervalIntersection = function(firstList, secondList) {
 使用两个指针分别表示当前区间的起始位置和结束位置。从头到尾遍历数组，检查当前数字与下一个数字是否连续。如果不连续或者 `end` 指针到达数组边界，则将当前区间添加到结果中，并更新 `start` 指针作为下一个区间的起始位置。否则继续向后移动 `end` 指针，直到遍历完数组元素为止。
 
 ``` js
-var summaryRanges = function(nums) {
+var summaryRanges = function (nums) {
   const res = [];
   const n = nums.length; 
   let start = 0;

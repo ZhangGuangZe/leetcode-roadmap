@@ -9,7 +9,7 @@
 循环遍历数组，将每个元素向右移动 `k` 个位置。如果 `k` 超过数组的长度，可以对 `k` 取模，减少不必要的轮转次数。
 
 ``` js
-var rotate = function(nums, k) {
+var rotate = function (nums, k) {
   const n = nums.length;
   k %= n;
   
@@ -31,7 +31,7 @@ var rotate = function(nums, k) {
 使用一个额外的数组来存储轮转后的结果，然后将结果复制回原数组。
 
 ``` js
-var rotate = function(nums, k) {
+var rotate = function (nums, k) {
   const n = nums.length;
   const temp = new Array(n);
 
@@ -52,7 +52,7 @@ var rotate = function(nums, k) {
 使用三次反转操作来完成轮转。首先反转整个数组，然后反转 `[0, k - 1]` 区间中的元素，再反转 `[k, n - 1]` 区间中的元素。
 
 ``` js
-var rotate = function(nums, k) {
+var rotate = function (nums, k) {
   const n = nums.length;
   k %= n;
   

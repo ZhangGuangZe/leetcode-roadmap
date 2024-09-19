@@ -11,7 +11,7 @@
 两层循环，判断外层当前元素与内层当前元素之和是否等于 `target`。
 
 ``` js
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   const n = nums.length;
   
   for (let i = 0; i < n - 1; i++) {
@@ -29,7 +29,7 @@ var twoSum = function(nums, target) {
 我们可以使用哈希表来存储数组中的元素及其索引。遍历数组元素，判断 `target - nums[i]` 是否在哈希表中。如果存在，则返回当前元素的索引和哈希表中对应元素的索引。
 
 ``` js
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   const map = new Map();
 
   for (let i = 0; i < nums.length; i++) {
@@ -112,7 +112,7 @@ var twoSum = function (nums, target) {
 思路与前两题相同，只不过这里要求返回的是从 1 开始的索引，仅用于参考。
 
 ``` js
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   const n = nums.length;
 
   for (let i = 0; i < n - 1; i++) {
@@ -130,7 +130,7 @@ var twoSum = function(nums, target) {
 由于输入数组是升序排列的，我们利用二分查找思想，在数组中查找 `target` 与 当前元素的差值，从而优化查找的时间。
 
 ``` js
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   const n = nums.length;
 
   for (let i = 0; i < n; i++) {
@@ -143,7 +143,7 @@ var twoSum = function(nums, target) {
   }
 };
 
-const binarySearch =(nums, target, lo, hi) => {
+const binarySearch = (nums, target, lo, hi) => {
   while (lo <= hi) {
     const mid = Math.floor((lo + hi) / 2);
     const num = nums[mid];
@@ -162,7 +162,7 @@ const binarySearch =(nums, target, lo, hi) => {
 为了进一步优化查找时间，根据数组的有序性，我们可以使用双指针来解决此题。思路与上一题相同，这里就不在赘述。
 
 ``` js
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   const n = numbers.length;
   let l = 0;
   let r = n - 1;
@@ -289,7 +289,7 @@ var threeSum = function (nums) {
 三重循环，尝试所有可能的三数组合，记录与 `target` 的差值，并返回差值最小的那个。
 
 ``` js
-var threeSumClosest = function(nums, target) {
+var threeSumClosest = function (nums, target) {
   let res = Infinity;
   const n = nums.length;
 
@@ -315,7 +315,7 @@ var threeSumClosest = function(nums, target) {
 先对数组进行排序，以方便跳过重复元素。然后固定一个元素，使用双指针在剩余元素中寻找另外两个元素，找出最接近 `target` 的和。
 
 ``` js
-var threeSumClosest = function(nums, target) {
+var threeSumClosest = function (nums, target) {
   nums.sort((a, b) => a - b);
 
   let res = Infinity;
@@ -456,7 +456,7 @@ const kSum = (nums, target, k, start, cur, res) => {
 枚举四个数组中的每个元素，计算和为 `0` 的四元组数量。仅用于参考。
 
 ``` js
-var fourSumCount = function(nums1, nums2, nums3, nums4) {
+var fourSumCount = function (nums1, nums2, nums3, nums4) {
   let count = 0;
 
   for (let i = 0; i < nums1.length; i++) {
@@ -480,7 +480,7 @@ var fourSumCount = function(nums1, nums2, nums3, nums4) {
 我们使用哈希表来存储 `num1` 和 `num2` 的和并记录每个和出现的次数，然后遍历计算`num3` 和 `num4` 的和，如果存在对应的和，则将次数加到结果中。
 
 ``` js
-var fourSumCount = function(nums1, nums2, nums3, nums4) {
+var fourSumCount = function (nums1, nums2, nums3, nums4) {
   let count = 0;
   const map = new Map();
 

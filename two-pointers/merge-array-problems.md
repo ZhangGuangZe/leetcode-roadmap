@@ -9,7 +9,7 @@
 先将 `nums2` 所有元素插入到 `num1` 末尾，然后对 `num1` 进行排序。
 
 ``` js
-var merge = function(nums1, m, nums2, n) {
+var merge = function (nums1, m, nums2, n) {
   for (let i = 0; i < n; i++) {
     nums1[m + i] = nums2[i];
   }
@@ -25,7 +25,7 @@ var merge = function(nums1, m, nums2, n) {
 利用两数组的有序性，依次从数组头部（从小到大）将较小的元素添加到新数组中，然后将新数组中的所有元素复制到 `nums1` 中。
 
 ``` js
-var merge = function(nums1, m, nums2, n) {
+var merge = function (nums1, m, nums2, n) {
   const sorted = [];
   let i = 0;
   let j = 0;
@@ -57,7 +57,7 @@ var merge = function(nums1, m, nums2, n) {
 利用双指针，在 `nums1` 中原地合并数组。从后向前（从大到小）遍历数组，每次将较大的元素从右向左依次放到 `nums1` 中，从而避免覆盖 `nums1` 中未处理的元素。
 
 ``` js
-var merge = function(nums1, m, nums2, n) {
+var merge = function (nums1, m, nums2, n) {
   let i = m - 1;
   let j = n - 1;
   let k = m + n - 1;
@@ -87,7 +87,7 @@ var merge = function(nums1, m, nums2, n) {
 先将 `nums` 中的每个元素平方，然后对平方后的数组进行排序，最后返回排序后的数组。
 
 ``` js
-var sortedSquares = function(nums) {
+var sortedSquares = function (nums) {
   return nums.map(item => item * item).sort((a, b) => a - b);
 };
 ```
@@ -101,7 +101,7 @@ var sortedSquares = function(nums) {
 因为数组所有元素平方后最大元素可能在两端，所以使用双指针，从两端向中间（从大到小）遍历两个子数组，每次将较大的元素从右向左依次添加到新数组中。
 
 ``` js
-var sortedSquares = function(nums) {
+var sortedSquares = function (nums) {
   const n = nums.length;
   let i = 0;
   let j = n - 1;
@@ -123,7 +123,7 @@ var sortedSquares = function(nums) {
 我们可以根据两个子数组的特点，找到两子数组的最小元素，并将指针指向它们，从小到大的比较，将较小的元素依次添加到新数组中。
 
 ``` js
-var sortedSquares = function(nums) {
+var sortedSquares = function (nums) {
   const n = nums.length;
   let j = 0;
 

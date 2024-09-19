@@ -9,7 +9,7 @@
 双层循环遍历数组，对于每个元素，判断其在数组中是否存在相同的元素。
 
 ``` js
-var containsDuplicate = function(nums) {
+var containsDuplicate = function (nums) {
   const n = nums.length;
 
   for (let i = 0; i < n - 1; i++) {
@@ -29,7 +29,7 @@ var containsDuplicate = function(nums) {
 先对数组进行排序，然后检查相邻的元素是否相同。
 
 ``` js
-var containsDuplicate = function(nums) {
+var containsDuplicate = function (nums) {
   nums.sort((a, b) => a - b);
 
   for (let i = 1; i < nums.length; i++) {
@@ -47,7 +47,7 @@ var containsDuplicate = function(nums) {
 遍历数组元素，判断当前元素是否存在于哈希表中，如果不存在，将其添加到哈希表中，否则有重复元素。
 
 ``` js
-var containsDuplicate = function(nums) {
+var containsDuplicate = function (nums) {
   const seen = new Set();
 
   for (const num of nums) {
@@ -70,7 +70,7 @@ var containsDuplicate = function(nums) {
 双层循环遍历数组，对于每个元素，判断在数组中是否存在相同的元素且索引差小于等于 `k`。
 
 ``` js
-var containsNearbyDuplicate = function(nums, k) {
+var containsNearbyDuplicate = function (nums, k) {
   const n = nums.length;
 
   for (let i = 0; i < n; i++) {
@@ -90,7 +90,7 @@ var containsNearbyDuplicate = function(nums, k) {
 使用哈希表来存储每个元素的索引，如果发现重复元素则判断它们的索引差是否小于等于 `k`。
 
 ``` js
-var containsNearbyDuplicate = function(nums, k) {
+var containsNearbyDuplicate = function (nums, k) {
   const n = nums.length;
   const map = new Map();
 
@@ -111,7 +111,7 @@ var containsNearbyDuplicate = function(nums, k) {
 维护一个大小为 `k` 的滑动窗口而无需将所有元素存入哈希表中。在遍历数组时，将元素添加到集合中，如果集合中的元素超过 `k` 个，就删除最左边的元素，直到找出重复元素为止。
 
 ``` js
-var containsNearbyDuplicate = function(nums, k) {
+var containsNearbyDuplicate = function (nums, k) {
   const n = nums.length;
   const seen = new Set();
 

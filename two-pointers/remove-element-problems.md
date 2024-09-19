@@ -11,7 +11,7 @@
 遍历数组，遇到重复元素时将后续所有元素向前移动一位，然后缩减数组长度。
 
 ``` js
-var removeDuplicates = function(nums) {
+var removeDuplicates = function (nums) {
   let n = nums.length;
 
   for (let i = 1; i < n; i++) {
@@ -39,7 +39,7 @@ var removeDuplicates = function(nums) {
 遍历数组，对于每个元素，比较当前元素与当前记录的上一个不重复元素是否相同，如果相同则跳过当前元素；否则将当前元素放到下一个重复元素的位置，并更新下一个不重复元素的位置。重复此过程，直到遍历结束为止。
 
 ``` js
-var removeDuplicates = function(nums) {
+var removeDuplicates = function (nums) {
   let i = 1;
   let j = 1;
 
@@ -98,7 +98,7 @@ var removeDuplicates = function (nums) {
 遍历数组，遇到指定元素时将后面的所有元素向前移动一位，然后缩减数组长度。
 
 ``` js
-var removeElement = function(nums, val) {
+var removeElement = function (nums, val) {
   let n = nums.length;
 
   for (let i = 0; i < n; i++) {
@@ -122,7 +122,7 @@ var removeElement = function(nums, val) {
 定义两个指针，`i` 指针用于记录非指定元素的位置，`j` 指针用于跟踪数组元素。遍历数组，如果当前元素等于 `val`，则跳过当前元素；否则将不等于 `val` 的元素向前移动以覆盖与 `val` 相同的元素。
 
 ``` js
-var removeElement = function(nums, val) {
+var removeElement = function (nums, val) {
   let i = 0;
 
   for (let j = 0; j < nums.length; j++) {
@@ -146,7 +146,7 @@ var removeElement = function(nums, val) {
 不过由于我们并不关心 `r` 指针后面的元素，所以只需使用 `r` 指针对应元素替换与 `val` 相同的元素即可，从而减少不必要的赋值操作。
 
 ``` js
-var removeElement = function(nums, val) {
+var removeElement = function (nums, val) {
   let l = 0;
   let r = nums.length - 1;
 
@@ -175,7 +175,7 @@ var removeElement = function(nums, val) {
 遍历数组，先将所有非零的元素依次移动到数组前面，然后将剩余位置全部置为 `0`。
 
 ``` js
-var moveZeroes = function(nums) {
+var moveZeroes = function (nums) {
   let i = 0;
 
   for (let j = 0; j < nums.length; j++) {
@@ -195,7 +195,7 @@ var moveZeroes = function(nums) {
 使用 `i` 指针跟踪非零元素的位置,  `j` 指针遍历数组元素。通过交换非零元素和 `0` 元素的位置，将所有 `0` 移动到数组末尾。
 
 ``` js
-var moveZeroes = function(nums) {
+var moveZeroes = function (nums) {
   let i = 0;
   let j = 0;
 

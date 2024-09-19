@@ -9,7 +9,7 @@
 对于 `[0, n]` 区间内的每一个数字，我们遍历数组，检查当前数字是否存在数组中，如果不存在则该数字就是丢失的数字。
 
 ``` js
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   for (let i = 0; i <= nums.length; i++) {
     let flag = false;
 
@@ -32,7 +32,7 @@ var missingNumber = function(nums) {
 为了优化性能，我们可以先对数组进行排序，然后遍历数组，如果当前数字与数组元素不对应则该数字即为丢失的数字。
 
 ``` js
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   nums.sort((a, b) => a - b);
 
   for (let i = 0; i <= nums.length; i++) {
@@ -48,7 +48,7 @@ var missingNumber = function(nums) {
 先将所有数字存入哈希表中，然后在 `[0, n]` 区间内查找不在集合中的数字。
 
 ``` js
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   const seen = new Set(nums);
 
   for (let i = 0; i <= nums.length; i++) {
@@ -64,7 +64,7 @@ var missingNumber = function(nums) {
 利用位运算中异或运算的特性：相同的数字异或为 0，任何数与 0 异或为其自身。遍历数组元素，消除相同的数字，最后剩下的数字即为丢失的数字。
 
 ``` js
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   const n = nums.length;
   let res = n;
 
@@ -83,7 +83,7 @@ var missingNumber = function(nums) {
 利用高斯求和公式计算 `[0, n]` 区间所有数字的总和，然后减去数组中所有数字的总和得到的即为丢失的数字。
 
 ``` js
-var missingNumber = function(nums) {
+var missingNumber = function (nums) {
   const n = nums.length;
   return (n * (n + 1) / 2) - nums.reduce((a, b) => a + b, 0);
 };
@@ -100,7 +100,7 @@ var missingNumber = function(nums) {
 对于 `[1, n]` 区间内的每一个数字，我们遍历数组，检查当前数字是否存在数组中，如果不在数组中则将其记录为消失的数字。
 
 ``` js
-var findDisappearedNumbers = function(nums) {
+var findDisappearedNumbers = function (nums) {
   const n = nums.length;
   const res = [];
 
@@ -128,7 +128,7 @@ var findDisappearedNumbers = function(nums) {
 利用空间换时间的思想。先将所有数字存入哈希表中，然后在 `[1, n]` 之间查找不在集合中的数字，将其记录为消失的数字。
 
 ``` js
-var findDisappearedNumbers = function(nums) {
+var findDisappearedNumbers = function (nums) {
   const seen = new Set(nums);
   const res = [];
 
@@ -147,7 +147,7 @@ var findDisappearedNumbers = function(nums) {
 “一个萝卜一个坑”，以索引作为哈希表的键，元素作为哈希表的值。先将元素与索引不对应的元素原地交换到对应位置，然后遍历数组，将与数组元素不对应的数字记录为消失的数字。
 
 ``` js
-var findDisappearedNumbers = function(nums) {
+var findDisappearedNumbers = function (nums) {
   const n = nums.length;
   const res = [];
 
@@ -172,7 +172,7 @@ var findDisappearedNumbers = function(nums) {
 通过标记数组元素的方式，将出现过的数字对应索引的元素标记为负数，然后遍历数组，将未标记（大于 `0`）的元素记录为消失的数字。
 
 ``` js
-var findDisappearedNumbers = function(nums) {
+var findDisappearedNumbers = function (nums) {
   const n = nums.length;
   const res = [];
 
@@ -192,7 +192,7 @@ var findDisappearedNumbers = function(nums) {
 也可以将出现过的数字对应索引的元素标记为大于 `n` 的数，将未标记（小于等于 `n`）的元素记录为消失的数字。
 
 ``` js
-var findDisappearedNumbers = function(nums) {
+var findDisappearedNumbers = function (nums) {
   const n = nums.length;
   const res = [];
 
@@ -224,7 +224,7 @@ var findDisappearedNumbers = function(nums) {
 从 1 开始检查当前正整数是否存在于数组中，直到找到第一个缺失的正整数为止。
 
 ``` js
-var firstMissingPositive = function(nums) {
+var firstMissingPositive = function (nums) {
   const n = nums.length;
 
   for (let i = 1; i <= n; i++) {
@@ -251,7 +251,7 @@ var firstMissingPositive = function(nums) {
 将数组所有元素存入哈希表中，然后从 1 开始遍历数组，判断当前数字是否在哈希表中。
 
 ``` js
-var firstMissingPositive = function(nums) {
+var firstMissingPositive = function (nums) {
   const n = nums.length;
   const seen = new Set(nums);
 
@@ -270,7 +270,7 @@ var firstMissingPositive = function(nums) {
 先将 `[1, n]` 区间内的所有元素原地交换到索引对应位置，然后遍历数组，找出第一个不在对应位置的元素即为缺失的正数。
 
 ``` js
-var firstMissingPositive = function(nums) {
+var firstMissingPositive = function (nums) {
   const n = nums.length;
 
   for (let i = 0; i < n; i++) {
@@ -294,7 +294,7 @@ var firstMissingPositive = function(nums) {
 由于数组中存在 `0` 和非负整数，需要将它们标记为 `n + 1` 的正整数。然后将 `[1, n]` 区间内的所有元素标记负数，最后遍历数组，找出第一个未标记的位置即为第一个缺失的正数。
 
 ``` js
-var firstMissingPositive = function(nums) {
+var firstMissingPositive = function (nums) {
   const n = nums.length;
 
   for (let i = 0; i < n; i++) {
