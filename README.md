@@ -1,6 +1,6 @@
 # LeetCode Roadmap
 
-## 数组
+## 数组（Array）
 
 - [k-sum problems](/array/k-sum-problems.md)
 
@@ -12,7 +12,7 @@
 
 - [rotate array problems](/array/rotate-array-problems.md)
 
-## 双指针
+## 双指针（Two Pointers）
 
 - [remove element problems](/two-pointers/remove-element-problems.md)
 
@@ -24,6 +24,12 @@
 
 - [other problems](/two-pointers/other-problems.md)
 
+## 滑动窗口（Sliding Window）
 
+- subarray problems
+
+- subsequence problems
+
+- [substring problems](/sliding-window/substring-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
