@@ -9,7 +9,7 @@
 枚举所有可能的子序列，检查其和与 `target` 是否相等。如果是，将子序列添加到结果列表中；否则从下一个元素开始继续寻找符合条件的子序列。
 
 ``` js
-var fileCombination = function(target) {
+var fileCombination = function (target) {
   const res = [];
 
   for (let i = 1; i < target / 2; i++) {
@@ -45,7 +45,7 @@ var fileCombination = function(target) {
 - 如果 `sum == target`，需要记录子序列，并将窗口左边界向右移动一位。
 
 ``` js
-var fileCombination = function(target) {
+var fileCombination = function (target) {
   const res = [];
   let l = 1;
   let r = 1;
@@ -76,7 +76,7 @@ var fileCombination = function(target) {
 我们可以对以上代码结构进行一些优化。
 
 ``` js
-var fileCombination = function(target) {
+var fileCombination = function (target) {
   const res = [];
   let l = 1;
   let r = 1;
