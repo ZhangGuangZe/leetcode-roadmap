@@ -531,6 +531,8 @@ var longestSubstring = function (s, k) {
 
 时间复杂度：O(n²)，空间复杂度：O(n)。
 
+TODO，关于分治法的更多信息，我们将在后面的相关专题中详细介绍。
+
 #### 3. 滑动窗口 + 哈希表 👍
 
 维护一个可变大小的滑动窗口，使用两个变量 `l` 和 `r` 分别表示滑动窗口的左右边界。使用哈希表统计窗口中每个字符出现的次数，保证窗口中的每个字符至少出现 `k` 次，以求得符合条件的最长子串。
@@ -591,7 +593,7 @@ var longestSubstring = function (s, k) {
 枚举所有可能的子串，使用哈希表统计当前子串每个字符出现的次数，计算子串中任意字符替换 `k` 次后包含相同字母的最长子串长度。
 
 ``` js
-var characterReplacement = function(s, k) {
+var characterReplacement = function (s, k) {
   const n = s.length;
   let res = 0;
 
@@ -625,7 +627,7 @@ var characterReplacement = function(s, k) {
 遍历 `s`，每次向右移动右边界扩大窗口，然后更新窗口内字符出现的次数并尝试更新字符的最大出现次数，如果当前窗口任意字符替换 `k` 次后不能让所有字符相同，则向右移动左指针收缩窗口，并更新窗口内字符出现的次数。最后更新子字符串长度，重复以上操作直到遍历完 `s` 为止。
 
 ``` js
-var characterReplacement = function(s, k) {
+var characterReplacement = function (s, k) {
   const n = s.length;
   let res = 0;
   let l = 0;
@@ -780,7 +782,9 @@ var numKLenSubstrNoRepeats = function (s, k) {
 
 #### 2. 滑动窗口 + Map 👍
 
-维护一个固定大小的滑动窗口，使用 `Map` 记录当前窗口中每个字符出现的次数。每次向右滑动一位窗口，如果窗口的大小与 `k` 相同，则说明该子串是无重复字符子串，将其记录在结果中，继续寻找其它无重复字符子串，直到窗口滑动到 `s` 右侧为止。
+维护一个固定大小的滑动窗口，使用哈希表 `map` 记录当前窗口中每个字符出现的次数。
+
+每次向右滑动一位窗口，如果窗口的大小与 `k` 相同，则说明该子串是无重复字符子串，将更新符合条件的子串个数，继续寻找其它无重复字符子串，直到窗口滑动到 `s` 右侧为止。
 
 ``` js
 var numKLenSubstrNoRepeats = function (s, k) {
@@ -814,9 +818,13 @@ var numKLenSubstrNoRepeats = function (s, k) {
 
 #### 3. 滑动窗口 + Set 👍
 
-维护一个可变大小的滑动窗口，使用两个变量 `l` 和 `r` 分别表示滑动窗口的左右边界。使用 `Set` 来检查窗口内的字符是否重复。
+维护一个可变大小的滑动窗口，使用两个变量 `l` 和 `r` 分别表示滑动窗口的左右边界。使用哈希集合 `seen` 来检查窗口内的字符是否重复。
 
-遍历 `s`，每次向右移动右边界扩大窗口，将当前字符添加到窗口中。如果出现重复字符，则向右移动左边界收缩窗口，直到窗口内没有重复字符。如果当前窗口有 `k` 个不同的字符，则记录结果并向右移动左边界收缩窗口。
+遍历 `s`，每次向右移动右边界扩大窗口，将当前字符添加到窗口中。
+
+如果当前窗口出现重复字符，则向右移动左边界收缩窗口，直到窗口内没有重复字符为止。
+
+如果当前窗口有 `k` 个不同的字符，则更新符合条件的子数组个数，并向右移动左边界收缩窗口继续寻找满足条件的子串。
 
 ``` js
 var numKLenSubstrNoRepeats = function (s, k) {
@@ -828,7 +836,7 @@ var numKLenSubstrNoRepeats = function (s, k) {
   const seen = new Set();
 
   while (r < s.length) {
-    // 满足条件，尝试缩小窗口
+    // 不满足条件，向右滑动左指针收缩窗口
     while (seen.has(s[r])) {
       seen.delete(s[l]);
       l++;
@@ -837,7 +845,7 @@ var numKLenSubstrNoRepeats = function (s, k) {
     // 扩大窗口
     seen.add(s[r]);
 
-    // 满足条件，尝试缩小窗口
+    // 满足条件，尝试向右滑动左指针收缩窗口找出符合条件的子串
     if (r - l + 1 === k) {
       res++;
       seen.delete(s[l]);
