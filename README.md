@@ -28,7 +28,7 @@
 
 - subarray problems
 
-- subsequence problems
+- [subsequence problems](/sliding-window/subsequence-problems.md)
 
 - [substring problems](/sliding-window/substring-problems.md)
 
