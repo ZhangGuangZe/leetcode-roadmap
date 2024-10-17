@@ -26,10 +26,20 @@
 
 ## 滑动窗口（Sliding Window）
 
-- subarray problems
+- [subarray problems](/sliding-window/subarray-problems.md)
 
 - [subsequence problems](/sliding-window/subsequence-problems.md)
 
 - [substring problems](/sliding-window/substring-problems.md)
+
+## 矩阵（Matrix）
+
+- matrix search problems
+
+- matrix traversal problems
+
+- rotate matrix problems
+
+- updating matrix elements problems
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
