@@ -34,7 +34,7 @@
 
 ## 矩阵（Matrix）
 
-- matrix search problems
+- [matrix search problems](/matrix/matrix-search-problems.md)
 
 - matrix traversal problems
 
