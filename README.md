@@ -36,7 +36,7 @@
 
 - [matrix search problems](/matrix/matrix-search-problems.md)
 
-- matrix traversal problems
+- [matrix traversal problems](/matrix/matrix-traversal-problems.md)
 
 - rotate matrix problems
 
