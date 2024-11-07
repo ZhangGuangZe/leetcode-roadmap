@@ -38,7 +38,7 @@
 
 - [matrix traversal problems](/matrix/matrix-traversal-problems.md)
 
-- rotate matrix problems
+- [rotate matrix problems](/matrix/rotate-matrix-problems.md)
 
 - updating matrix elements problems
 
