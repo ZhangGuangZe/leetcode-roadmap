@@ -40,6 +40,6 @@
 
 - [rotate matrix problems](/matrix/rotate-matrix-problems.md)
 
-- updating matrix elements problems
+- [updating matrix elements problems](/matrix/updating-matrix-elements-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
