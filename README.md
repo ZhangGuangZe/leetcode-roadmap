@@ -43,3 +43,7 @@
 - [updating matrix elements problems](/matrix/updating-matrix-elements-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
+
+## 链表（Linked List）
+
+- [design problems](/linked-list/design-problems.md)
