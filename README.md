@@ -47,3 +47,7 @@
 ## 链表（Linked List）
 
 - [design problems](/linked-list/design-problems.md)
+
+- [traversal problems](/linked-list/traversal-problems.md)
+
+- remove node problems
