@@ -57,7 +57,7 @@ var maxArea = function (height) {
 遍历数组，逐个计算每个柱子可以容纳的雨水量，将它们累加得到总的雨水量。找出当前柱子左右两边最高柱子的高度，然后在它们之间选择最小值减去当前柱子的高度即可得到当前柱子可以容纳的雨水量。
 
 ``` js
-var trap = function(height) {
+var trap = function (height) {
   const n = height.length;
   if (n === 0) return 0;
 
@@ -89,7 +89,7 @@ var trap = function(height) {
 通过空间换时间的思想，减少重复计算。首先从左往右和从右往左预处理每个柱子所遇到的最高柱子的高度，然后遍历数组计算当前柱子的积水量。
 
 ``` js
-var trap = function(height) {
+var trap = function (height) {
   const n = height.length;
   if (n === 0) return 0;
 
