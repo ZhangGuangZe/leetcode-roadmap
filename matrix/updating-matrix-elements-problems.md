@@ -6,6 +6,8 @@
 
 ### 1. 额外空间-矩阵（不符合题目要求）
 
+首先将源矩阵中的元素拷贝到新矩阵中，然后遍历矩阵，根据源矩阵中的信息更新新矩阵，最后将新矩阵还原到原矩阵中。
+
 ``` js
 var setZeroes = function (matrix) {
   const rows = matrix.length;
