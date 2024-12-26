@@ -48,8 +48,12 @@
 
 - [linked list traversal problems](/linked-list/linked-list-traversal-problems.md)
 
-- remove node problems
+- [remove node problems](/linked-list/remove-node-problems.md)
 
 - [reverse linked list problems](/linked-list/reverse-linked-list-problems.md)
+
+- palindrome-linked-list-problems
+
+- linked-list-cycle-problems
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
