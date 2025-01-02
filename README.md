@@ -52,7 +52,7 @@
 
 - [reverse linked list problems](/linked-list/reverse-linked-list-problems.md)
 
-- palindrome-linked-list-problems
+- [palindrome-linked-list-problems](/linked-list/palindrome-linked-list-problems.md)
 
 - linked-list-cycle-problems
 
