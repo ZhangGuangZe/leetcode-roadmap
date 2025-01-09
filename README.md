@@ -52,8 +52,12 @@
 
 - [reverse linked list problems](/linked-list/reverse-linked-list-problems.md)
 
-- [palindrome-linked-list-problems](/linked-list/palindrome-linked-list-problems.md)
+- [palindrome linked list problems](/linked-list/palindrome-linked-list-problems.md)
 
-- linked-list-cycle-problems
+- [linked list cycle problems](/linked-list/linked-list-cycle-problems.md)
+
+- merge linked list problems
+
+- reorder linked list problems
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
