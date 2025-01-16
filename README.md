@@ -56,8 +56,10 @@
 
 - [linked list cycle problems](/linked-list/linked-list-cycle-problems.md)
 
-- merge linked list problems
+- [merge linked list problems](/linked-list/merge-linked-list-problems.md)
 
 - reorder linked list problems
+
+- sort linked list problems
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
