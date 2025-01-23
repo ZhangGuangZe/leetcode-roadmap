@@ -58,8 +58,12 @@
 
 - [merge linked list problems](/linked-list/merge-linked-list-problems.md)
 
-- reorder linked list problems
+- [reorder linked list problems](/linked-list/reorder-linked-list-problems.md)
 
 - sort linked list problems
+
+- copy linked list problems
+
+- linked list sum problems
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
