@@ -60,7 +60,7 @@
 
 - [reorder linked list problems](/linked-list/reorder-linked-list-problems.md)
 
-- sort linked list problems
+- [sort linked list problems](/linked-list/sort-linked-list-problems.md)
 
 - copy linked list problems
 
