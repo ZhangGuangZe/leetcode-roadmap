@@ -62,7 +62,7 @@
 
 - [sort linked list problems](/linked-list/sort-linked-list-problems.md)
 
-- copy linked list problems
+- [copy linked list problems](/linked-list/copy-linked-list-problems.md)
 
 - linked list sum problems
 
