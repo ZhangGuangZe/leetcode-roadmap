@@ -52,6 +52,8 @@
 
 - [reverse linked list problems](/linked-list/reverse-linked-list-problems.md)
 
+- rotate linked list problems
+
 - [palindrome linked list problems](/linked-list/palindrome-linked-list-problems.md)
 
 - [linked list cycle problems](/linked-list/linked-list-cycle-problems.md)
@@ -64,6 +66,6 @@
 
 - [copy linked list problems](/linked-list/copy-linked-list-problems.md)
 
-- linked list sum problems
+- [linked list sum problems](/linked-list/linked-list-sum-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
