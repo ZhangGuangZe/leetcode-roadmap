@@ -68,4 +68,18 @@
 
 - [linked list sum problems](/linked-list/linked-list-sum-problems.md)
 
+## 栈（Stack）
+
+- [parentheses matching problems](/stack/parentheses-matching-problems.md)
+
+- simplify path problems
+
+- remove all adjacent duplicates problems
+
+- expression evaluation problems
+
+- design problems
+
+- other problems
+
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
