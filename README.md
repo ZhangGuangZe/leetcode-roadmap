@@ -72,13 +72,13 @@
 
 - [parentheses matching problems](/stack/parentheses-matching-problems.md)
 
-- simplify path problems
-
-- remove all adjacent duplicates problems
-
 - expression evaluation problems
 
 - design problems
+
+- [simplify path problems](/stack/simplify-path-problems.md)
+
+- remove all adjacent duplicates problems
 
 - other problems
 
