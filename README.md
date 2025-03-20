@@ -78,7 +78,7 @@
 
 - [simplify path problems](/stack/simplify-path-problems.md)
 
-- remove all adjacent duplicates problems
+- [remove all adjacent duplicates problems](/stack/remove-all-adjacent-duplicates-problems.md)
 
 - other problems
 
