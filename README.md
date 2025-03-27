@@ -72,7 +72,7 @@
 
 - [parentheses matching problems](/stack/parentheses-matching-problems.md)
 
-- expression evaluation problems
+- [expression evaluation problems](/stack/expression-evaluation-problems.md)
 
 - design problems
 
