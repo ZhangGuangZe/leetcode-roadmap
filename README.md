@@ -80,6 +80,6 @@
 
 - [remove all adjacent duplicates problems](/stack/remove-all-adjacent-duplicates-problems.md)
 
-- other problems
+- [other problems](/stack/other-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
