@@ -82,4 +82,8 @@
 
 - [other problems](/stack/other-problems.md)
 
-🟢 简单 🟡 中等 🔴 困难 👍 推荐的题解 ❤ 推荐的题目 🔒 Plus 会员专享题
+## 单调栈（Monotonic Stack）
+
+- [largest rectangle problems](/monotonic-stack/largest-rectangle-problems.md)
+
+🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
