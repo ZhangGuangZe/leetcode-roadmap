@@ -74,7 +74,7 @@
 
 - [expression evaluation problems](/stack/expression-evaluation-problems.md)
 
-- design problems
+- [design problems](/stack/design-problems.md)
 
 - [simplify path problems](/stack/simplify-path-problems.md)
 
