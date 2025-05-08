@@ -70,11 +70,11 @@
 
 ## 栈（Stack）
 
+- [design problems](/stack/design-problems.md)
+
 - [parentheses matching problems](/stack/parentheses-matching-problems.md)
 
 - [expression evaluation problems](/stack/expression-evaluation-problems.md)
-
-- [design problems](/stack/design-problems.md)
 
 - [simplify path problems](/stack/simplify-path-problems.md)
 
@@ -85,5 +85,7 @@
 ## 单调栈（Monotonic Stack）
 
 - [largest rectangle problems](/monotonic-stack/largest-rectangle-problems.md)
+
+- [lexicographically optimal subsequence problems](/monotonic-stack/lexicographically-optimal-subsequence-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
