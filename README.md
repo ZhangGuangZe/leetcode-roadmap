@@ -84,8 +84,10 @@
 
 ## 单调栈（Monotonic Stack）
 
-- [largest rectangle problems](/monotonic-stack/largest-rectangle-problems.md)
+- [next greater element problems](/monotonic-stack/next-greater-element-problems.md)
 
 - [lexicographically optimal subsequence problems](/monotonic-stack/lexicographically-optimal-subsequence-problems.md)
+
+- [largest rectangle problems](/monotonic-stack/largest-rectangle-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
