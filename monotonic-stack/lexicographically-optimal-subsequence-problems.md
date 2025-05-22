@@ -67,17 +67,16 @@ var removeKdigits = function (num, k) {
 
 	while (k-- > 0) stack.pop();
 
-  /* let res = '';
-  let isLeadingZeros = true;
+  // let res = '';
+  // let isLeadingZeros = true;
 
-  for (const dight of stack) {
-    if (isLeadingZeros && dight === '0') continue;
-    isLeadingZeros = false;
-    res += dight;
-  }
+  // for (const dight of stack) {
+  //   if (isLeadingZeros && dight === '0') continue;
+  //   isLeadingZeros = false;
+  //   res += dight;
+  // }
 
-  return res || '0'; */
-
+  // return res || '0';
 	return stack.join('').replace(/^0+/, '') || '0';
 };
 ```
