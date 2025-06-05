@@ -92,4 +92,8 @@
 
 - [max chunks to make sorted problems](/monotonic-stack/max-chunks-to-make-sorted-problems.md)
 
+## 队列（Queue）
+
+- [design problems](/queue/design-problems.md)]
+
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
