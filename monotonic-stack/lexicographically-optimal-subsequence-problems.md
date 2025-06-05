@@ -67,6 +67,7 @@ var removeKdigits = function (num, k) {
 
 	while (k-- > 0) stack.pop();
 
+	return stack.join('').replace(/^0+/, '') || '0';
   // let res = '';
   // let isLeadingZeros = true;
 
@@ -77,7 +78,6 @@ var removeKdigits = function (num, k) {
   // }
 
   // return res || '0';
-	return stack.join('').replace(/^0+/, '') || '0';
 };
 ```
 
