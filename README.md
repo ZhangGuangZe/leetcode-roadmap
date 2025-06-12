@@ -94,6 +94,8 @@
 
 ## 队列（Queue）
 
-- [design problems](/queue/design-problems.md)]
+- [design problems](/queue/design-problems.md)
+
+- [sliding window problems](/queue/sliding-window-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
