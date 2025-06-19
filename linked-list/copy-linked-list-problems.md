@@ -19,7 +19,7 @@ var copyList = function (head) {
 };
 ```
 
-时间复杂度O(n)，空间复杂度O(n)。
+时间复杂度：O(n)，空间复杂度：O(n)。
 
 ### 2. 迭代
 
@@ -44,7 +44,7 @@ var copyList = function (head) {
 };
 ```
 
-时间复杂度O(n)，空间复杂度O(1)。
+时间复杂度：O(n)，空间复杂度：O(1)。
 
 ## [138. 复制带随机指针的链表 🟡 ❤](https://leetcode.cn/problems/copy-list-with-random-pointer/description/)
 
@@ -79,7 +79,7 @@ var copyRandomList = function (head) {
 };
 ```
 
-时间复杂度O(n)，空间复杂度O(n)。
+时间复杂度：O(n)，空间复杂度：O(n)。
 
 ### 2. 迭代 + 哈希表 👍
 
@@ -106,7 +106,7 @@ var copyRandomList = function (head) {
 };
 ```
 
-时间复杂度O(n)，空间复杂度O(1)。
+时间复杂度：O(n)，空间复杂度：O(1)。
 
 以上两种解法都需要使用哈希表来记录每个节点的创建情况，我们可以使用原地拼接和节点拆分的方式来优化空间复杂度。
 
@@ -157,4 +157,4 @@ var copyRandomList = function (head) {
 };
 ```
 
-时间复杂度O(n)，空间复杂度O(1)。
+时间复杂度：O(n)，空间复杂度：O(1)。
