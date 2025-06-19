@@ -98,4 +98,8 @@
 
 - [sliding window problems](/queue/sliding-window-problems.md)
 
+## 递归（Recursion）
+
+- [hanota problems](/recursion/hanota-problems.md)
+
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
