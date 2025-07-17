@@ -2,7 +2,7 @@
 
 ## [384. 打乱数组 🟡](https://leetcode.cn/problems/shuffle-an-array/description/)
 
-题目要求：设计一个类，支持将数组元素随机打乱和将数组元素重置为初始状态。
+题目要求：设计一个类，支持将数组元素随机打乱（`shuffle()`）和将数组元素重置为初始状态（`reset()`）。
 
 ### 1. 暴力法
 
@@ -34,7 +34,7 @@ Solution.prototype.shuffle = function () {
 
 时间复杂度：O(n²)，空间复杂度：O(n)。
 
-### 2. Fisher-Yates 洗牌算法
+### 2. Fisher-Yates 洗牌算法 👍
 
 从数组末尾开始，每次随机选择一个元素，然后将其与当前位置的元素交换。这样可以保证每个元素被随机置于数组中的任意位置。
 
