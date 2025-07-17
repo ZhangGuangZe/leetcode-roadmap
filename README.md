@@ -102,4 +102,20 @@
 
 - [hanota problems](/recursion/hanota-problems.md)
 
+## 排序算法（Sorting Algorithm）
+
+- quick sort problems
+
+- merge sort problems
+
+- counting sort problems
+
+- bucket sort problems
+
+- parity sort problems
+
+- wiggle sort problems
+
+- [shuffle algorithm problems](/sorting-algorithm/shuffle-algorithm-problems.md)
+
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
