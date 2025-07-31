@@ -104,7 +104,7 @@
 
 ## 排序算法（Sorting Algorithm）
 
-- quick sort problems
+- [quick sort problems](/sorting-algorithm/quick-sort-problems.md)
 
 - merge sort problems
 
