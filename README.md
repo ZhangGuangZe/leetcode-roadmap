@@ -112,7 +112,7 @@
 
 - bucket sort problems
 
-- parity sort problems
+- [parity sort problems](/sorting-algorithm/parity-sort-problems.md)
 
 - wiggle sort problems
 
