@@ -1,4 +1,4 @@
-# 快速排序算法
+# 快速排序算法问题
 
 ## [75. 颜色分类（荷兰国旗问题）🟡 ❤](https://leetcode.cn/problems/sort-colors/description/)
 
