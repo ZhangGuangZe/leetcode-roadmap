@@ -114,7 +114,7 @@
 
 - [parity sort problems](/sorting-algorithm/parity-sort-problems.md)
 
-- wiggle sort problems
+- [wiggle sort problems](/sorting-algorithm/wiggle-sort-problems.md)
 
 - [shuffle algorithm problems](/sorting-algorithm/shuffle-algorithm-problems.md)
 
