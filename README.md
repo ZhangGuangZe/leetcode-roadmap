@@ -106,7 +106,7 @@
 
 - [quick sort problems](/sorting-algorithm/quick-sort-problems.md)
 
-- merge sort problems
+- [merge sort problems](/sorting-algorithm/merge-sort-problems.md)
 
 - counting sort problems
 

@@ -1,4 +1,4 @@
-# 摆动排序算法问题
+# 摆动排序问题
 
 ## [280. 摆动排序 🟡 ❤ 🔒](https://leetcode.cn/problems/wiggle-sort/description/)
 
