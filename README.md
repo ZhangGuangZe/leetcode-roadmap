@@ -108,7 +108,7 @@
 
 - [merge sort problems](/sorting-algorithm/merge-sort-problems.md)
 
-- counting sort problems
+- [counting sort problems](/sorting-algorithm/counting-sort-problems.md)
 
 - bucket sort problems
 
