@@ -110,7 +110,7 @@
 
 - [counting sort problems](/sorting-algorithm/counting-sort-problems.md)
 
-- bucket sort problems
+- [bucket sort problems](/sorting-algorithm/bucket-sort-problems.md)
 
 - [parity sort problems](/sorting-algorithm/parity-sort-problems.md)
 
