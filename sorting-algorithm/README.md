@@ -1,4 +1,4 @@
-# 栈
+# 排序算法
 
 [排序算法原理及实现](https://zhangguangze.github.io/blog/computer/algorithms/sorting.html)
 
