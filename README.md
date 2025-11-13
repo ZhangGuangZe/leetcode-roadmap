@@ -118,4 +118,8 @@
 
 - [shuffle algorithm problems](/sorting-algorithm/shuffle-algorithm-problems.md)
 
+## 二分查找（Binary Search）
+
+- [basic search problems](/binary-search/basic-search-problems.md)
+
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
