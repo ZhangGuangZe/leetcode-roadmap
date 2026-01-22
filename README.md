@@ -122,4 +122,20 @@
 
 - [basic search problems](/binary-search/basic-search-problems.md)
 
+- [boundary search problems](/binary-search/boundary-search-problems.md)
+
+- [search in rotated sorted array](/binary-search/search-in-rotated-sorted-array-problems.md)
+
+- [search in sorted matrix](/binary-search/search-in-sorted-matrix-problems.md)
+
+- [peak finding problems](/binary-search/peak-finding-problems.md)
+
+- [binary search on value problems](/binary-search/binary-search-on-value-problems.md)
+
+- [binary search on answer problems](/binary-search/binary-search-on-answer-problems.md)
+
+- [complex condition search problems](/binary-search/complex-condition-search-problems.md) 
+
+- [other problems](/binary-search/other-problems.md)
+
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
