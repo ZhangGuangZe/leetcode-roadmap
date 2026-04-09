@@ -695,7 +695,7 @@ var lengthOfLongestSubstring = function (s) {
 
 遍历 `s`，每次向右移动右边界扩大窗口，将当前字符添加到窗口中，并计算无重复字符字串的长度。如果当前窗口出现重复字符，则向右移动左边界收缩窗口。重复以上过程直到遍历完字符 `s` 为止。
 
-```js
+``` js
 var lengthOfLongestSubstring = function (s) {
   const n = s.length;
   let res = 0;

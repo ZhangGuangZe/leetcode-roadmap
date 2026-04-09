@@ -175,23 +175,23 @@ var minSubArrayLen = function (target, nums) {
 
 #### 2. 前缀和 + 二分查找
 
-我们使用前缀和 `prefixSums` 数组对 `nums` 进行预处理，其中 `prefixSums[i]` 表示 `nums` 前 i 个元素之和。这样 `prefixSums[i] - prefixSums[j]` 就表示从 `nums[j, ..., i]` 的子数组中所有元素的和。
+我们使用前缀和 `prefixSum` 数组对 `nums` 进行预处理，其中 `prefixSum[i]` 表示 `nums` 前 i 个元素之和。这样 `prefixSum[i] - prefixSum[j]` 就表示从 `nums[j, ..., i]` 的子数组中所有元素的和。
 
-如果 `prefixSums[i] - prefixSums[j] >= target`，则说明 `nums[j, ..., i]` 的是满足条件的子数组，但不一定就是最短的，我们需要继续向右移动 `j`，直到找到满足条件的子数组。我们可以使用双层循环到满足条件的子数组。
+如果 `prefixSum[i] - prefixSum[j] >= target`，则说明 `nums[j, ..., i]` 的是满足条件的子数组，但不一定就是最短的，我们需要继续向右移动 `j`，直到找到满足条件的子数组。我们可以使用双层循环到满足条件的子数组。
 
 ``` js
 var minSubArrayLen = function (target, nums) {
   const n = nums.length;
   let res = Infinity;
 
-  const prefixSums = new Array(n + 1).fill(0);
+  const prefixSum = new Array(n + 1).fill(0);
   for (let i = 1; i <= n; i++) {
-    prefixSums[i] = prefixSums[i - 1] + nums[i - 1];
+    prefixSum[i] = prefixSum[i - 1] + nums[i - 1];
   }
 
   for (let i = 1; i <= n; i++) {
     for (let j = 0; j < i; j++) {
-      if (prefixSums[i] - prefixSums[j] < target) break;
+      if (prefixSum[i] - prefixSum[j] < target) break;
       res = Math.min(res, i - j);
     }
   }
@@ -200,20 +200,20 @@ var minSubArrayLen = function (target, nums) {
 };
 ```
 
-不过，因为数组是一个正整数数组，所以 `prefixSums` 是单调递增的，我们可以使用二分查找快速查找满足条件的最短子数组。
+不过，因为数组是一个正整数数组，所以 `prefixSum` 是单调递增的，我们可以使用二分查找快速查找满足条件的最短子数组。
 
 ``` js
 var minSubArrayLen = function (target, nums) {
   const n = nums.length;
   let res = Infinity;
 
-  const prefixSums = new Array(n + 1).fill(0);
+  const prefixSum = new Array(n + 1).fill(0);
   for (let i = 1; i <= n; i++) {
-    prefixSums[i] = prefixSums[i - 1] + nums[i - 1];
+    prefixSum[i] = prefixSum[i - 1] + nums[i - 1];
   }
 
   for (let i = 1; i <= n; i++) {
-    const j = binarySearch(prefixSums, 0, i, prefixSums[i] - target);
+    const j = binarySearch(prefixSum, 0, i, prefixSum[i] - target);
     if (j > 0) {
       res = Math.min(res, i - j + 1);
     }
@@ -235,7 +235,7 @@ const binarySearch = (nums, lo, hi, target) => {
 
 时间复杂度：O(nlogn)，空间复杂度：O(n)。
 
-TODO：关于前缀和和二分查找的更多信息，我们可以在后面的相关专题中详细介绍。
+TODO:关于前缀和和二分查找的更多信息，我们可以在后面的相关专题中详细介绍。
 
 #### 3. 滑动窗口 👍
 

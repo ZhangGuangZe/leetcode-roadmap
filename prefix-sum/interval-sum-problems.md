@@ -29,20 +29,20 @@ NumArray.prototype.sumRange = function (left, right) {
 ### 2. 前缀和 👍
 
 由于暴力法 `sumRange()`  每次检索的时间复杂度为 `O(n)`，我们可以使用前缀和将其优化到 `O(1)`。
-初始化时计算前缀和数组 `prefixSums`，`prefixSums[i]` 表示前 `i` 个元素的和。则区间和可通过 `prefixSums[right+1] - prefixSums[left]` 快速得出。
+初始化时计算前缀和数组 `prefixSum`，`prefixSum[i]` 表示前 `i` 个元素的和。则区间和可通过 `prefixSum[right+1] - prefixSum[left]` 快速得出。
 
 ``` js
 var NumArray = function (nums) {
   const n = nums.length;
-  this.prefixSums = new Array(n + 1).fill(0);
+  this.prefixSum = new Array(n + 1).fill(0);
 
   for (let i = 0; i <= n; i++) {
-    this.prefixSums[i + 1] = this.prefixSums[i] + nums[i];
+    this.prefixSum[i + 1] = this.prefixSum[i] + nums[i];
   }
 };
 
 NumArray.prototype.sumRange = function (left, right) {
-  return this.prefixSums[right + 1] - this.prefixSums[left];
+  return this.prefixSum[right + 1] - this.prefixSum[left];
 };
 ```
 
@@ -78,29 +78,29 @@ NumMatrix.prototype.sumRegion = function (row1, col1, row2, col2) {
 
 ### 2. 前缀和 👍
 
-初始化时计算二维前缀和数组 `prefixSums`，`prefixSums[i + 1][j + 1]` 表示从第 `i` 行第 `j` 列所有元素之和。
+初始化时计算二维前缀和数组 `prefixSum`，`prefixSum[i + 1][j + 1]` 表示从第 `i` 行第 `j` 列所有元素之和。
 
-前缀和公式为：`prefixSums[i + 1][j + 1] = prefixSums[i][j + 1] + prefixSums[i + 1][j] - prefixSums[i][j] + matrix[i][j]`。
+前缀和公式为：`prefixSum[i + 1][j + 1] = prefixSum[i][j + 1] + prefixSum[i + 1][j] - prefixSum[i][j] + matrix[i][j]`。
 
-子矩阵求和公式为：`sumRegion = prefixSums[row2 + 1][col2 + 1] - prefixSums[row1][col2 + 1] - prefixSums[row2 + 1][col1] + prefixSums[row1][col1]`
+子矩阵求和公式为：`sumRegion = prefixSum[row2 + 1][col2 + 1] - prefixSum[row1][col2 + 1] - prefixSum[row2 + 1][col1] + prefixSum[row1][col1]`
 
 ``` js
 var NumMatrix = function (matrix) {
   const m = matrix.length;
   const n = matrix[0].length;
-  this.prefixSums = Array.from({ length: m + 1}, () => new Array(n + 1).fill(0));
+  this.prefixSum = Array.from({ length: m + 1}, () => new Array(n + 1).fill(0));
 
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; j++) {
       // 前缀和 = (A + B) + （A + C) - A + D
-      this.prefixSums[i + 1][j + 1] = this.prefixSums[i][j + 1] + this.prefixSums[i + 1][j] - this.prefixSums[i][j] + matrix[i][j];
+      this.prefixSum[i + 1][j + 1] = this.prefixSum[i][j + 1] + this.prefixSum[i + 1][j] - this.prefixSum[i][j] + matrix[i][j];
     }
   }
 };
 
 NumMatrix.prototype.sumRegion = function (row1, col1, row2, col2) {
   // 区间和 = 右下角子区间和 - 上方矩形 - 左方矩形 + 左上角重复减去部分
-  return this.prefixSums[row2 + 1][col2 + 1] - this.prefixSums[row1][col2 + 1] - this.prefixSums[row2 + 1][col1] + this.prefixSums[row1][col1];
+  return this.prefixSum[row2 + 1][col2 + 1] - this.prefixSum[row1][col2 + 1] - this.prefixSum[row2 + 1][col1] + this.prefixSum[row1][col1];
 };
 ```
 
@@ -294,13 +294,13 @@ var productExceptSelf = function (nums) {
 var possibleToStamp = function (grid, stampHeight, stampWidth) {
   const m = grid.length;
   const n = grid[0].length;
-  const prefixSums = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  const prefixSum = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
   const diff = Array.from({ length: m + 2 }, () => new Array(n + 2).fill(0)); // 多加一圈边界，方便差分操作
 
   // 使用二维前缀和快速判断一个矩形区域内是否有障碍物
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; j++) {
-      prefixSums[i + 1][j + 1] = prefixSums[i][j + 1] + prefixSums[i + 1][j] - prefixSums[i][j] + grid[i][j];
+      prefixSum[i + 1][j + 1] = prefixSum[i][j + 1] + prefixSum[i + 1][j] - prefixSum[i][j] + grid[i][j];
     }
   }
 
@@ -311,7 +311,7 @@ var possibleToStamp = function (grid, stampHeight, stampWidth) {
       const y1 = j + 1;
       const x2 = i + stampHeight;
       const y2 = j + stampWidth;
-      const sum = prefixSums[x2][y2] - prefixSums[x1 - 1][y2] - prefixSums[x2][y1 - 1] + prefixSums[x1 - 1][y1 - 1];
+      const sum = prefixSum[x2][y2] - prefixSum[x1 - 1][y2] - prefixSum[x2][y1 - 1] + prefixSum[x1 - 1][y1 - 1];
 
       if (sum === 0) {
         diff[x1][y1] += 1;

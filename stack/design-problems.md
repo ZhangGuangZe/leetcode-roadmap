@@ -96,7 +96,7 @@ MyQueue.prototype.empty = function () {
 
 出栈时：如果 `stack` 出栈的元素等于 `minStack` 的栈顶元素，则将 `minStack` 的栈顶元素出栈。
 
-```js
+``` js
 var MinStack = function () {
   this.stack = [];
   this.minStack = [];

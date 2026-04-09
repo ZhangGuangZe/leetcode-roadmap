@@ -296,11 +296,11 @@ var countRangeSum = function (nums, lower, upper) {
 ``` js
 var countRangeSum = function (nums, lower, upper) {
   const n = nums.length;
-  const prefixSums = Array(n + 1).fill(0);
+  const prefixSum = Array(n + 1).fill(0);
   const temp = Array(n + 1).fill(0);
 
   for (let i = 0; i < n; i++) {
-    prefixSums[i + 1] = prefixSums[i] + nums[i];
+    prefixSum[i + 1] = prefixSum[i] + nums[i];
   }
 
   const mergeSort = (nums, lo, hi, temp) => {
@@ -324,7 +324,7 @@ var countRangeSum = function (nums, lower, upper) {
     merge(nums, lo, mid, hi, temp);
     return count;
   };
-  return mergeSort(prefixSums, 0, n, temp);
+  return mergeSort(prefixSum, 0, n, temp);
 };
 
 const merge = (nums, lo, mid, hi, temp) => {

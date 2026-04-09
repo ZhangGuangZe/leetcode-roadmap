@@ -1,6 +1,6 @@
 # 基础查找问题
 
-## [704. 二分查找 🟢](https://leetcode-cn.com/problems/binary-search/)
+## [704. 二分查找 🟢](https://leetcode.cn/problems/binary-search/)
 
 题目要求： 在一个升序排列的整数数组中，查找目标值 `target` 并返回其索引。如果目标值不存在于数组中，返回 `-1`。
 
@@ -30,7 +30,7 @@ var search = function (nums, target) {
 
 时间复杂度：O(logn)，空间复杂度：O(1)。
 
-## [374. 猜数字大小 🟢](https://leetcode-cn.com/problems/guess-number-higher-or-lower/)
+## [374. 猜数字大小 🟢](https://leetcode.cn/problems/guess-number-higher-or-lower/)
 
 题目要求：在 `1` 到 `n` 范围中猜随机选择数字 `peek`，根据系统提示（`0` 表示猜对了，`-1` 表示猜大了，`1` 猜小了）猜出选择的数字。
 

@@ -55,7 +55,7 @@ var hasCycle = function (head) {
 
 ### 1. 哈希表
 
-```js
+``` js
 var detectCycle = function (head) {
   const visited = new Set();
   let curNode = head;
@@ -76,7 +76,7 @@ var detectCycle = function (head) {
 
 首先使用快慢指针判断是否有环。如果有环，快指针回到头节点，快慢指针同时每次移动一步，直到两者相遇，相遇的节点即为入环节点。
 
-```js
+``` js
 var detectCycle = function (head) {
   let slow = head;
   let fast = head;
