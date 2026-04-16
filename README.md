@@ -142,6 +142,6 @@
 
 - [interval sum problems](/prefix-sum/interval-sum-problems.md)
 
-- subarray problems
+- [subarray problems](/prefix-sum/subarray-problems.md)
 
 🟢 简单 🟡 中等 🔴 困难 ❤ 推荐的题目 👍 推荐的题解 🔒 Plus 会员专享题
